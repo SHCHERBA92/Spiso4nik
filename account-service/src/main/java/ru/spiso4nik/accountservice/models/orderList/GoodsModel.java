@@ -13,28 +13,30 @@ import java.math.BigDecimal;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "goods")
 public class GoodsModel {
-    private final String SEQUENCE_NAME = "sequence_good_model";
-    private final String _NAME = "good_model";
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @SequenceGenerator(name = _NAME, sequenceName = SEQUENCE_NAME, initialValue = 50)
+    @SequenceGenerator(name = "good_model", sequenceName = "sequence_good_model")
     private Long id;
 
+    @Column(name = "good_name")
     private String name;
 
+    @Column(name = "good_image")
     private String img;
 
+    @Column(name = "good_price")
     private BigDecimal price;
 
+    @Column(name = "good_count")
     private Integer count;
 
-    @Column(name = "status")
+    @Column(name = "good_status")
     @Enumerated(EnumType.STRING)
     private RoleOfStatus roleOfStatus;
 
     @ManyToOne
-    @JoinColumn(name = "global_spisok_model_id")
+    @JoinColumn(name = "list_of_goods_id")
     private GlobalSpisokModel globalSpisokModel;
 }

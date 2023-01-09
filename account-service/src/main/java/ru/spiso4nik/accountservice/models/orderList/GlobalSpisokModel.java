@@ -15,14 +15,15 @@ import java.util.List;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "list_of_goods")
 public class GlobalSpisokModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @SequenceGenerator(name = "GlobalSpisokModel", sequenceName = "GlobalSpisokModel_seq", initialValue = 50)
+    @SequenceGenerator(name = "GlobalSpisokModel", sequenceName = "GlobalSpisokModel_seq")
     private Long id;
 
     @Column(name = "create_date")
-    private LocalDate createAt = LocalDate.now();
+    private LocalDate createAt;
 
     @Column(name = "date_to")
     private LocalDate dateTo;

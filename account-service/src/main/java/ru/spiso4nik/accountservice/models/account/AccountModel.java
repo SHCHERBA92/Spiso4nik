@@ -17,13 +17,9 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class AccountModel {
-
-    private final String _NAME = "auth_user";
-    private final String SEQUENCE_NAME = "sequence_auth_user";
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @SequenceGenerator(name = _NAME, sequenceName = SEQUENCE_NAME, initialValue = 50)
+    @SequenceGenerator(name = "auth_user", sequenceName = "sequence_auth_user")
     @Column(name = "account_id")
     private Long id;
 
@@ -46,8 +42,8 @@ public class AccountModel {
     @Enumerated(EnumType.STRING)
     private RoleOfUser roleOfUser;
 
-//    @Column(name = "user_active")
-//    private Boolean active;
+    @Column(name = "user_active")
+    private Boolean active;
 
     @Column(name = "account_localCreated")
     private LocalDate localDateCreated;
