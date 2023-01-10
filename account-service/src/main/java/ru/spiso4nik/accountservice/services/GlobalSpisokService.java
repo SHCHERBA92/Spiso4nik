@@ -28,15 +28,15 @@ public class GlobalSpisokService {
         return globalSpisokRepository.findAllByAccountModel(accountModel);
     }
 
-    public void addNewSpisok(String spisokName, String storeName, LocalDate localDate, AccountModel accountModel) {
-        if (StringUtils.isEmpty(spisokName) || StringUtils.isEmpty(storeName) || localDate == null) {
+    public void addNewSpisok(String spisokName, LocalDate localDate, AccountModel accountModel) {
+        if (StringUtils.isEmpty(spisokName) || localDate == null) {
             throw new ExceptionNotElements("");
         }
         GlobalSpisokModel globalSpisokModel = new GlobalSpisokModel();
         globalSpisokModel.setNameOfShopList(spisokName);
-        globalSpisokModel.setStoreName(storeName);
         globalSpisokModel.setDateTo(localDate);
         globalSpisokModel.setAccountModel(accountModel);
+        globalSpisokModel.setCreateAt(LocalDate.now());
         globalSpisokRepository.saveAndFlush(globalSpisokModel);
     }
 

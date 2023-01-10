@@ -1,4 +1,4 @@
-package ru.spiso4nik.accountservice.dto;
+package ru.spiso4nik.accountservice.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,13 +15,16 @@ import java.util.List;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class GlobalSpisokDto {
+public class GlobalSpisokDtoResponse {
+    private LocalDate createAt;
 
     private LocalDate dateTo;
 
-    private String storeName;
+//    private String storeName;
 
     private String nameOfShopList;
 
-    private String emailCurrentAccount;
+    private List<GoodsModel> goodsModels;
+
+    private AccountModel accountModel;
 }

@@ -4,22 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cbd4c2f-8d85-4b63-909a-a805625805d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/dto/GlobalSpisokDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/exceptions/ExceptionNotElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/exceptions/ExceptionRepeatElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/repository/AccountRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/545b801f-f562-4b1e-8bec-b1b5587393a4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/545b801f-f562-4b1e-8bec-b1b5587393a4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/545b801f-f562-4b1e-8bec-b1b5587393a4/storage_v2/_src_/database/spisochnik_account.cVmhMQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/545b801f-f562-4b1e-8bec-b1b5587393a4/storage_v2/_src_/database/spisochnik_account.cVmhMQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/545b801f-f562-4b1e-8bec-b1b5587393a4/storage_v2/_src_/database/spisochnik_account.cVmhMQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/545b801f-f562-4b1e-8bec-b1b5587393a4/storage_v2/_src_/database/spisochnik_account.cVmhMQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/545b801f-f562-4b1e-8bec-b1b5587393a4/storage_v2/_src_/database/spisochnik_account.cVmhMQ/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/545b801f-f562-4b1e-8bec-b1b5587393a4/storage_v2/_src_/database/spisochnik_account.cVmhMQ/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/545b801f-f562-4b1e-8bec-b1b5587393a4/storage_v2/_src_/database/spisochnik_account.cVmhMQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/545b801f-f562-4b1e-8bec-b1b5587393a4/storage_v2/_src_/database/spisochnik_account.cVmhMQ/schema/public.abK9xQ.meta" afterDir="false" />
+    <list default="true" id="7cbd4c2f-8d85-4b63-909a-a805625805d2" name="Changes" comment="Продолжение работы">
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/configuration/ModelMapperConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/controllers/GoodsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/dto/request/AccountDtoRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/dto/request/GoodsDtoRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/dto/response/AccountDtoResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/dto/response/GlobalSpisokDtoResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/controllers/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/controllers/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/controllers/DeleteSpisokController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/controllers/EdditShopListController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/controllers/HomeShopList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/controllers/StartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/controllers/GlobalSpisokController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/controllers/ToDaySpisokController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/dto/GlobalSpisokDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/dto/request/GlobalSpisokDtoRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/models/account/AccountModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/models/account/AccountModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/models/orderList/GlobalSpisokModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/models/orderList/GlobalSpisokModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/models/orderList/GoodsModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/models/orderList/GoodsModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/repository/GlobalSpisokRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/repository/GlobalSpisokRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/services/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/services/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/services/GlobalSpisokService.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/services/GlobalSpisokService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/services/ServiceGoods.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/services/GoodsService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +39,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -54,11 +64,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.spiso4nik.accountservice.dto" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice" />
     </key>
@@ -84,8 +98,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673242817186</updated>
-      <workItem from="1673242818737" duration="10664000" />
+      <workItem from="1673242818737" duration="24268000" />
+      <workItem from="1673325682819" duration="601000" />
     </task>
+    <task id="LOCAL-00001" summary="Продолжение работы">
+      <created>1673254465558</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673254465558</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Продолжение работы">
+      <created>1673254511389</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673254511389</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,5 +131,50 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Продолжение работы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Продолжение работы" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/controllers/AccountController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/controllers/AccountController.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/services/AccountService.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/services/AccountService.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/controllers/GlobalSpisokController.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/services/GlobalSpisokService.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice/controllers/GlobalSpisokController.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

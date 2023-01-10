@@ -48,6 +48,6 @@ public class AccountModel {
     @Column(name = "account_localCreated")
     private LocalDate localDateCreated;
 
-    @OneToMany(mappedBy = "accountModel", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "accountModel", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<GlobalSpisokModel> globalSpisokModels;
 }

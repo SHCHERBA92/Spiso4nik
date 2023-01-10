@@ -1,6 +1,9 @@
 package ru.spiso4nik.accountservice.services;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Transactional;
+import ru.spiso4nik.accountservice.dto.request.GoodsDtoRequest;
 import ru.spiso4nik.accountservice.exceptions.ExceptionNotElements;
 import ru.spiso4nik.accountservice.models.orderList.GlobalSpisokModel;
 import ru.spiso4nik.accountservice.models.orderList.GoodsModel;
@@ -12,13 +15,13 @@ import java.math.BigDecimal;
 import java.util.List;
 
 @Service
-public class ServiceGoods {
+public class GoodsService {
     private final GoodsRepository goodsRepository;
     private final GlobalSpisokRepository globalSpisokRepository;
 
     private final String NOT_FIND_ELEMENT = "Элемента нет в базе данных";
 
-    public ServiceGoods(GoodsRepository goodsRepository, GlobalSpisokRepository globalSpisokRepository) {
+    public GoodsService(GoodsRepository goodsRepository, GlobalSpisokRepository globalSpisokRepository) {
         this.goodsRepository = goodsRepository;
         this.globalSpisokRepository = globalSpisokRepository;
     }
@@ -44,16 +47,22 @@ public class ServiceGoods {
         goodsRepository.saveAndFlush(model);
     }
 
-    public void createNewGood(String name, String img, BigDecimal price, Integer count, Long idSpisok) {
-        GoodsModel model = new GoodsModel();
-        var currentGlobalSpisok = globalSpisokRepository.findById(idSpisok).orElseThrow(() -> new ExceptionNotElements(NOT_FIND_ELEMENT));
-        model.setName(name);
-        model.setRoleOfStatus(RoleOfStatus.READY_BUY);
-        model.setImg(img);
-        model.setPrice(price.multiply(new BigDecimal(count)));
-        model.setCount(count);
-        model.setGlobalSpisokModel(currentGlobalSpisok);
-        goodsRepository.saveAndFlush(model);
+    @Transactional(isolation = Isolation.REPEATABLE_READ)
+    public void createNewGood(GoodsDtoRequest goodsDtoRequest, Long idSpisok) {
+        GoodsModel goodsModel = new GoodsModel();
+        var currentGlobalSpisok = globalSpisokRepository.findById(idSpisok)
+                .orElseThrow(() -> new ExceptionNotElements(NOT_FIND_ELEMENT));
+
+        goodsModel.setName(goodsDtoRequest.getName());
+        goodsModel.setRoleOfStatus(RoleOfStatus.READY_BUY);
+        goodsModel.setImg(goodsDtoRequest.getImg());
+        goodsModel.setCount(goodsDtoRequest.getCount());
+        goodsModel.setPrice(goodsDtoRequest.getPrice().multiply(new BigDecimal(goodsDtoRequest.getCount())));
+
+        goodsModel.setGlobalSpisokModel(currentGlobalSpisok);
+        currentGlobalSpisok.getGoodsModels().add(goodsModel);
+
+        goodsRepository.saveAndFlush(goodsModel);
     }
 
     /**

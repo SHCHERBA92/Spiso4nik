@@ -28,16 +28,16 @@ public class GlobalSpisokModel {
     @Column(name = "date_to")
     private LocalDate dateTo;
 
-    @Column(unique = false, name = "name_store")
-    private String storeName;
+//    @Column(unique = false, name = "name_store")
+//    private String storeName;
 
     @Column(unique = false, name = "name_shop_list")
     private String nameOfShopList;
 
     @OneToMany(mappedBy = "globalSpisokModel", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    List<GoodsModel> goodsModels;
+    private List<GoodsModel> goodsModels;
 
     @ManyToOne
     @JoinColumn(name = "account_id")
-    AccountModel accountModel;
+    private AccountModel accountModel;
 }
