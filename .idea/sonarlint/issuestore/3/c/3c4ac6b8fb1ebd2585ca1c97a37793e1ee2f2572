@@ -1,0 +1,8 @@
+
+u	java:S116"[Rename this field "NOT_FIND_ELEMENT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(žé®–ùÿÿÿÿ
+<
+java:S1170"!Make this final field static too.(žé®–ùÿÿÿÿ
+J
+java:S1874 "/Remove this use of "isEmpty"; it is deprecated.(úö¥Âþÿÿÿÿ
+O
+java:S1068"4Remove this unused "NOT_FIND_ELEMENT" private field.(žé®–ùÿÿÿÿ

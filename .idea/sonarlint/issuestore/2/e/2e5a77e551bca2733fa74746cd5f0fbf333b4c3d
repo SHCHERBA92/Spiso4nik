@@ -1,0 +1,11 @@
+
+k
+java:S3655o"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(õÁçşÿÿÿÿ
+f
+java:S3655i"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(ÈÙŞñ
+u	java:S116"[Rename this field "NOT_FIND_ELEMENT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é®–ùÿÿÿÿ
+<
+java:S1170"!Make this final field static too.(é®–ùÿÿÿÿ
+V	java:S125h"<This block of commented-out lines of code should be removed.(ŸÆï¬úÿÿÿÿ
+M
+java:S1135g"2Complete the task associated to this TODO comment.(ÀÉµ¦ùÿÿÿÿ

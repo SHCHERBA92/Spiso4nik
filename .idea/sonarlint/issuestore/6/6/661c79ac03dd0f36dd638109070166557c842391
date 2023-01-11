@@ -1,0 +1,13 @@
+
+V	java:S125"<This block of commented-out lines of code should be removed.(İç“Öûÿÿÿÿ
+l
+java:S1128	"QRemove this unused import 'org.springframework.format.annotation.DateTimeFormat'.(‡ˆôƒøÿÿÿÿ
+j
+java:S1128
+"TRemove this unused import 'ru.spiso4nik.accountservice.models.account.AccountModel'.(û—µ
+o
+java:S1128"TRemove this unused import 'ru.spiso4nik.accountservice.models.orderList.GoodsModel'.(ÏúÇ¥üÿÿÿÿ
+D
+java:S1128".Remove this unused import 'javax.persistence'.(¬£şç
+F
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
