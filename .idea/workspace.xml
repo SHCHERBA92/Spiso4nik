@@ -4,18 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cbd4c2f-8d85-4b63-909a-a805625805d2" name="Changes" comment="Добавлены контроллеры.&#10;Добавлены DTO сущности на запросы и ответы.">
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/configuration/ObjectMapperConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/configuration/WebClientConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/dto/ProductsPerecrestokResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/service/Authentication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/service/ProductList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/service/perecrestok/AuthenticationPerecrestok.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7cbd4c2f-8d85-4b63-909a-a805625805d2" name="Changes" comment="Добавлены товары из Магнита и Ашана.">
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/service/auchan/ProductAuchan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/service/magnit/ProductMagnit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/service/pyaterochka/ProductPyatorochka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/dto/ProductPerecrestokToBroker.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/dto/ProductToBroker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/dto/ProductsPerecrestokResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/service/perecrestok/AuthenticationPerecrestok.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/service/perecrestok/AuthenticationPerecrestok.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/service/perecrestok/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/service/perecrestok/ProductPerecrestok.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +59,7 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/product-service/selenium" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -69,7 +69,12 @@
       <recent name="ru.spiso4nik.accountservice.dto" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/product-service/selenium" />
+      <recent name="$PROJECT_DIR$/product-service/src/main/resources/selenium" />
       <recent name="$PROJECT_DIR$/account-service/src/main/java/ru/spiso4nik/accountservice" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/product-service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ru.spiso4nik.accountservice.repository" />
@@ -102,7 +107,10 @@
       <updated>1673242817186</updated>
       <workItem from="1673242818737" duration="24268000" />
       <workItem from="1673325682819" duration="32130000" />
-      <workItem from="1673412321212" duration="2714000" />
+      <workItem from="1673412321212" duration="22086000" />
+      <workItem from="1673497640927" duration="14520000" />
+      <workItem from="1673514645509" duration="13092000" />
+      <workItem from="1673587393251" duration="6986000" />
     </task>
     <task id="LOCAL-00001" summary="Продолжение работы">
       <created>1673254465558</created>
@@ -125,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673326810701</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Добавлены контроллеры.&#10;Добавлены DTO сущности на запросы и ответы.">
+      <created>1673416841561</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673416841561</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +160,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Продолжение работы" />
     <MESSAGE value="Добавлены контроллеры.&#10;Добавлены DTO сущности на запросы и ответы." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлены контроллеры.&#10;Добавлены DTO сущности на запросы и ответы." />
+    <MESSAGE value="Добавлены товары из Магнита и Ашана." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены товары из Магнита и Ашана." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -186,24 +202,44 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/service/perecrestok/Product.java</url>
-          <line>40</line>
+          <url>file://$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/service/perecrestok/ProductPerecrestok.java</url>
+          <line>38</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/controller/TestController.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/service/perecrestok/Product.java</url>
-          <line>60</line>
+          <url>file://$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/service/perecrestok/ProductPerecrestok.java</url>
+          <line>48</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/service/perecrestok/Product.java</url>
-          <line>64</line>
+          <url>file://$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/service/perecrestok/ProductPerecrestok.java</url>
+          <line>52</line>
           <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/service/okey_store/AuthentificationOkey.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/service/okey_store/AuthentificationOkey.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/service/okey_store/AuthentificationOkey.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/service/okey_store/ProductOkey.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/product-service/src/main/java/com/spiso4nik/productservice/service/auchan/ProductAuchan.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -9,7 +9,7 @@ import lombok.Setter;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ProductPerecrestokToBroker {
+public class ProductToBroker {
     String balanceState;
     String title;
     double priceTag;

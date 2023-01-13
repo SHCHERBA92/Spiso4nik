@@ -27,18 +27,18 @@ public class AuthenticationPerecrestok implements Authentication<MultiValueMap<S
         var sessionCookie = webClient.build()
                 .get()
                 .uri(strUrl)
-                .accept(MediaType.APPLICATION_JSON_UTF8)
+                .accept(MediaType.APPLICATION_JSON)
                 .exchange()
                 .blockOptional()
                 .orElseThrow()
                 .cookies().get("session").get(0).getValue();
 
         List<String> tokens = Arrays.stream(sessionCookie.replace("j%3A%7B%22accessToken%22%3A%22", "!!!!!")
-                    .replace("%22%2C%22refreshToken%22%3A%22", "!!!!!")
-                    .split("!!!!!"))
+                        .replace("%22%2C%22refreshToken%22%3A%22", "!!!!!")
+                        .split("!!!!!"))
                 .filter(s -> !s.isEmpty())
                 .collect(Collectors.toList());
-        MultiValueMap<String, String> multiValueMap = new LinkedMultiValueMap();
+        MultiValueMap<String, String> multiValueMap = new LinkedMultiValueMap<>();
         multiValueMap.put("accessToken", List.of(tokens.get(0)));
         multiValueMap.put("refreshToken", List.of(tokens.get(1)));
 
